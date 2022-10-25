@@ -1,0 +1,117 @@
+:root {
+  --color-pink: #fd377e;
+  --color-white: #ffffff;
+  --color-grey: #e4e4e4;
+  --color-grey2: #303030;
+  --color-border: rgba(0, 0, 0, 0.185);
+  --color-backgroundlist: rgba(228, 228, 228, 0.459);
+  --color-green: #03b898;
+  --color-red: #e65454;
+}
+
+.container-list {
+  width: 35rem;
+  padding: 2rem;
+}
+
+.head-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head-list > p {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--color-grey2);
+}
+
+.head-list > div {
+  display: inline-flex;
+  gap: 14px;
+}
+
+.btn-list {
+  padding: 0.7rem 0.9rem;
+  border-style: none;
+  background-color: var(--color-grey);
+  color: var(--color-grey2);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.6s;
+}
+
+.btn-list:hover {
+  background-color: var(--color-pink);
+  box-shadow: 0px 0px 35px -9px rgb(0, 0, 0);
+  color: var(--color-white);
+}
+
+.div-listing-finances > h3 {
+  color: var(--color-grey2);
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.div-listing-finances {
+  margin-top: 3rem;
+}
+
+.cards-finances > div > h3 {
+  color: var(--color-grey2);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.cards-finances {
+  padding: 1rem;
+  background-color: var(--color-backgroundlist);
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.cards-finances > div {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.cards-finances > div > div {
+  display: flex;
+  gap: 40px;
+}
+
+.input-finance {
+  border-left: 4px solid var(--color-green);
+}
+
+.output-finance {
+  border-left: 4px solid var(--color-red);
+}
+
+.ul-list {
+  height: 21rem;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.cards-finances > div > div > p {
+  color: var(--color-grey2);
+  font-weight: 600;
+}
+
+.del-finance {
+  color: var(--color-grey2);
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.del-finance:hover {
+  color: var(--color-pink);
+}
+.cards-finances > p {
+  color: var(--color-grey2);
+}

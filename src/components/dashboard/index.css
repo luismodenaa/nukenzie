@@ -1,0 +1,238 @@
+:root {
+  --color-pink: #fd377e;
+  --color-white: #ffffff;
+  --color-grey: #e4e4e4;
+  --color-grey2: #303030;
+  --color-border: rgba(0, 0, 0, 0.185);
+}
+
+.header-div {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  align-content: center;
+  justify-content: space-around;
+  background-color: var(--color-white);
+  padding: 1.6rem;
+  align-items: center;
+  box-shadow: 0px 0px 1.2px -18px rgba(0, 0, 0, 0.31),
+    0px 0px 3px -18px rgba(0, 0, 0, 0.444),
+    0px 0px 6.2px -18px rgba(0, 0, 0, 0.556),
+    0px 0px 12.8px -18px rgba(0, 0, 0, 0.69),
+    0px 0px 35px -18px rgba(0, 0, 0, 1);
+}
+
+.header-div > h1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--color-pink);
+}
+
+.header-div > button {
+  padding: 0.8rem 1.4rem;
+  background-color: var(--color-grey);
+  border-style: none;
+  border-radius: 8px;
+  color: var(--color-grey2);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.header-div > button:hover {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  box-shadow: 0px 0px 35px -10px rgb(0, 0, 0);
+}
+
+.main-background {
+  background-color: var(--color-white);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 70vw;
+  height: 90vh;
+  align-items: center;
+}
+
+.create-finance {
+  border: 1px solid var(--color-border);
+  padding: 2rem;
+  width: 22rem;
+  height: 22.5rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.all-finances {
+  width: 40rem;
+  height: 31.5rem;
+}
+
+.section-totalprice {
+  width: 20rem;
+  margin-top: 5rem;
+  margin-left: 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.container-totalprice {
+  padding: 2rem;
+}
+
+.head-totalprice > h3 {
+  color: var(--color-grey2);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.head-totalprice > p {
+  color: var(--color-pink);
+  font-weight: 700;
+  font-size: 20px;
+}
+.head-totalprice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-totalprice > p {
+  margin-top: 1.5rem;
+  color: var(--color-grey2);
+}
+
+body {
+  overflow-y: scroll;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 7.5rem;
+    width: 40rem;
+    margin-top: 7rem;
+    overflow-y: auto;
+  }
+
+  .section-totalprice {
+    margin-top: 3.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 26rem;
+    gap: 10rem;
+  }
+
+  .create-finance {
+    width: 20rem;
+  }
+
+  .input {
+    width: 18rem;
+  }
+
+  .btn-insert-value {
+    font-size: 16px;
+    padding: 1rem 7.3rem;
+  }
+
+  .section-totalprice {
+    margin-left: 0rem;
+  }
+
+  .all-finances {
+    width: 27rem;
+    height: 31.5rem;
+  }
+
+  .container-list {
+    width: 23rem;
+  }
+
+  .head-list > p {
+    font-size: 15px;
+  }
+
+  .head-list > div {
+    gap: 8px;
+  }
+
+  .btn-list {
+    padding: 0.3rem 0.6rem;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 20rem;
+    gap: 10rem;
+  }
+
+  .create-finance {
+    width: 14rem;
+  }
+
+  .input {
+    width: 12.3rem;
+  }
+
+  .value > input {
+    width: 3.7rem;
+  }
+
+  .desc-value > select {
+    width: 7rem;
+  }
+
+  .btn-insert-value {
+    font-size: 15px;
+    padding: 0.8rem 4.5rem;
+  }
+
+  .section-totalprice {
+    margin-top: 5rem;
+    margin-left: -2rem;
+    width: 18rem;
+  }
+
+  .all-finances {
+    width: 22rem;
+    height: 31.5rem;
+  }
+
+  .container-list {
+    width: 18rem;
+  }
+
+  .head-list > p {
+    font-size: 15px;
+  }
+
+  .head-list > div {
+    gap: 8px;
+  }
+
+  .btn-list {
+    padding: 0.3rem 0.6rem;
+    font-size: 13px;
+  }
+}

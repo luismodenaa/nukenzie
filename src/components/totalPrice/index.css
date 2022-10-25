@@ -1,0 +1,41 @@
+:root {
+  --color-pink: #fd377e;
+  --color-white: #ffffff;
+  --color-grey: #e4e4e4;
+  --color-grey2: #303030;
+  --color-border: rgba(0, 0, 0, 0.185);
+}
+
+.section-totalprice {
+  width: 20rem;
+  margin: 0 16.5rem;
+  margin-top: -10rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.container-totalprice {
+  padding: 2rem;
+}
+
+.head-totalprice > h3 {
+  color: var(--color-grey2);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.head-totalprice > p {
+  color: var(--color-pink);
+  font-weight: 700;
+  font-size: 20px;
+}
+.head-totalprice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-totalprice > p {
+  margin-top: 1.5rem;
+  color: var(--color-grey2);
+}
